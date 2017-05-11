@@ -1,0 +1,14 @@
+<h3 class="header center orange-text"><%= note.title %></h3>
+
+<%- note.description %>
+
+<br>
+
+<div class="content">
+<% if (note.snippets.length) { %>
+    <% note.snippets.forEach(function(snippet){ %>
+        <h5 class="bold"><%= snippet.name %></h5>
+            <%- snippet.marked %>
+    <% }) %>
+<% } %>
+</div>

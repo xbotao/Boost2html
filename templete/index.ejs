@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title><%= config.title%></title>
+    <!-- CSS  -->
+    <link href="https://cdn.bootcss.com/materialize/0.98.2/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="http://cdn.bootcss.com/highlight.js/9.11.0/styles/agate.min.css" rel="stylesheet">
+    <link href="<%= config.basePath %>/assert/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <!-- ================= header ================ -->
+    <%- header %>
+
+    <!-- ================= main ================ -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <br>
+                    <br>
+                    <%- content %>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ================= footer ================ -->
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; <%= config.since %> , Created by <a class="orange-text text-lighten-3" href="https://github.com/xbotao"><%= config.autor %></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/materialize/0.98.2/js/materialize.js"></script>
+    
+    <script src="<%= config.basePath %>/assert/js/init.js"></script>
+
+    <%- inifunction %>
+
+</body>
+
+</html>

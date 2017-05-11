@@ -1,0 +1,63 @@
+<header>
+    <nav class="light-blue lighten-1 hide-on-large-only" role="navigation">
+
+        <div class="nav-wrapper container ">
+            <a id="logo-container" href="<%= config.basePath %>" class="brand-logo">
+                <%= config.snippetTitle %>
+            </a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <ul id="nav-mobile" class="side-nav fixed">
+        <li>
+            <div class="userView">
+                <div class="background">
+                    <img src="<%= config.basePath %>/assert/images/office.jpg">
+                </div>
+                <a href="<%= config.basePath %>"><img class="circle" src="<%= config.basePath %>/assert/images/header.png"></a>
+                <a href="<%= config.basePath %>"><span class="white-text name"> <%= config.autor %></span></a>
+                <a href="mailto:<%= config.email %>"><span class="white-text email"><%= config.email %></span></a>
+            </div>
+        </li>
+        <li><a href="<%= config.website %>"><i class="material-icons">home</i><%= config.sitename %></a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">分类</a></li>
+        <li class="search">
+            <div class="search-wrapper card">
+                <input id="search"><i class="material-icons">search</i>
+                <div id="search-results">
+                </div>
+            </div>
+        </li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+
+                <% if (storage.folders.length) { %>
+                    <% storage.folders.forEach(function(folder){ %>
+                        <li class="bold">
+                            <div class="collapsible-header red-text lighten-2"><span class="badge"><%= folder.notes.length %></span>
+                                <%= folder.name %>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <% if (folder.notes.length) { %>
+                                        <% folder.notes.forEach(function(note){ %>
+                                            <li id='<%= note.key %>' class="light">
+                                                <a href='<%= config.basePath %>/snippets/<%= note.folder %>/<%= note.key %>'>
+                                                    <%= note.title %>
+                                                </a>
+                                            </li>
+                                            <% }) %>
+                                                <% } %>
+                                </ul>
+                            </div>
+                        </li>
+                        <% }) %>
+                            <% } %>
+            </ul>
+        </li>
+    </ul>
+
+</header>

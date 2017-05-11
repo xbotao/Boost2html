@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Snippets</title>
+
+    <!-- CSS  -->
+    <link href="https://cdn.bootcss.com/materialize/0.98.2/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"
+    />
+    <link href="http://cdn.bootcss.com/highlight.js/9.11.0/styles/agate.min.css" rel="stylesheet">
+
+    <link href="assert/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ================= header ================ -->
+    <header>
+        <nav class="light-blue lighten-1 hide-on-large-only" role="navigation">
+            <div class="nav-wrapper container "><a id="logo-container" href="#" class="brand-logo">Snippets</a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li>
+                <div class="userView">
+                    <div class="background">
+                        <img src="assert/images/office.jpg">
+                    </div>
+                    <a href="#!user"><img class="circle" src="assert/images/header.png"></a>
+                    <a href="#!name"><span class="white-text name">Lazyboy</span></a>
+                    <a href="#!email"><span class="white-text email">xbotao2014@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">home</i>Blog Home</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li class="search">
+                <div class="search-wrapper card">
+                    <input id="search"><i class="material-icons">search</i>
+                    <div id="search-results">
+                        <a href="http://materializecss.com/about.html">About.html</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold">
+                        <div class="collapsible-header black-text"><span class="badge">4</span>First</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Color</a></li>
+                                <li><a href="#">Grid</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header waves-effect waves-teal">second</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">SideNav</a></li>
+                                <li><a href="#">Tabs</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- ================= main ================ -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <br><br>
+                    <h3 class="header center orange-text">Title</h3>
+                    <div class="row center">
+                        <!-- 
+                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                        -->
+                        <h5 class="header light">
+                            <span class="createTime"><i class="Tiny material-icons">edit</i>Created Time</sapn>
+                            <span class="createTime"><i class="Tiny material-icons">replay</i>Update time</span>
+                        </h5>
+
+                    </div>
+                    <hr />
+                    <br>
+
+                    <div class="content">
+                        <h6 class="bold">Demo.html</h6>
+                        <pre><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>菜鸟教程(runoob.com)<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>我的第一个标题<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我的第一个段落。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ================= footer ================ -->
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2017 , Created by <a class="orange-text text-lighten-3" href="https://github.com/xbotao">xbotao</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/materialize/0.98.2/js/materialize.js"></script>
+
+    <script src="assert/js/init.js"></script>
+    <script>
+        $('.collapsible').collapsible('open', 0);
+    </script>
+</body>
+
+</html>

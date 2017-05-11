@@ -1,0 +1,31 @@
+{
+  "name": "boost2html",
+  "version": "1.0.0",
+  "description": "convert boost snippet to web htmls",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/newbiebt/boost2html.git"
+  },
+  "keywords": [
+    "boostnote",
+    "snippets"
+  ],
+  "author": "lazyboy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "highlight.js": "^9.11.0",
+    "html-minifier": "^3.4.4",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "path": "^0.12.7",
+    "sander": "^0.6.0",
+    "season": "^6.0.0",
+    "simple-git": "^1.72.0",
+    "yamljs": "^0.2.10"
+  }
+}
