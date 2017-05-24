@@ -1,5 +1,7 @@
 # Boost2html
 
+Convert Boostnote snippets to web pages and push it to git automatically.
+
 Demo: [http://www.lazyboy.site/codes](http://www.lazyboy.site/codes)
 
 
@@ -29,7 +31,15 @@ sitename: lazyboy.site
 since: 2017
 ```
 
-3、 
+#### 3、 init git manually
+
+```bash
+cd output
+git init
+git remote add origin git@xxxxxxxxx.git
+```
+
+#### 4、
 
 ```
 node index.js
